@@ -10,16 +10,12 @@
         android:layout_height="match_parent"
         tools:context="com.playrtc.simplechat.MainActivityAlt">
 
-        <include
-            android:id="@+id/app_bar"
-            layout="@layout/app_bar" />
-
         <RelativeLayout
             android:id="@+id/video_view_group"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@id/app_bar"
-            android:layout_centerHorizontal="true">
+            android:layout_centerHorizontal="true"
+            android:onClick="clickBackBtn">
 
             <!-- TODO: PlayRTCVideView XML View need update SDK -->
             <!--<com.sktelecom.playrtc.util.ui.PlayRTCVideoView-->
@@ -34,6 +30,10 @@
                 <!--android:layout_alignParentRight="true"-->
                 <!--android:layout_alignParentTop="true"-->
                 <!--android:layout_margin="30dp" />-->
+
+            <include
+                android:id="@+id/app_bar"
+                layout="@layout/app_bar" />
 
         </RelativeLayout>
 
